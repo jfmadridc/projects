@@ -1,0 +1,52 @@
+* {
+	text-align: center;
+	color: #d6d6d6;
+	font-family: "Montserrat";
+}
+body {
+	background: linear-gradient(#004473, rgb(100, 158, 155));
+	height: 100dvh;
+	overflow: hidden;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	height: 100dvh;
+}
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 28px;
+}
+.cards-container {
+	width: 90%;
+	max-width: 550px;
+	height: 100%;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	padding: 15px 0;
+	border-radius: 8px;
+	margin: 10px 0;
+	border: solid 2px #d6d6d6;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/* will apply to mobile and ipad */
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 40px;
+	}
+	.cards-container {
+		width: 550px;
+	}
+	.card {
+		font-size: 22px;
+	}
+}
