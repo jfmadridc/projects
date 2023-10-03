@@ -1,0 +1,5 @@
+.menu__lista {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}

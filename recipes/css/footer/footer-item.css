@@ -1,0 +1,16 @@
+.footer__item{
+    list-style: none;
+}
+
+@media screen and (min-width:768px) {
+    .footer__item{
+        list-style: none;
+    }
+    .footer__item:first-child{
+        margin-right: 1.25rem;
+    }
+    .footer__item:last-child{
+        margin-left: 1.25rem;
+    }
+    
+}

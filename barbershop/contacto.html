@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Contact - JFM/BarberShop</title>
+	<link rel="stylesheet" href="1.CSS/reset.css">
+	<link rel="stylesheet" href="1.CSS/styles.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Menu/Header de la pagina con el logo y links de navegacion  -->
+	<header>
+		<div id="cajaHeader">
+			<img id="imgLogo" src="./Recursos/logo-blanco.png">
+			<h1 id="tituloSitio">Contact</h1>
+			<nav>
+				<!-- lista no ordenada de elementos del menu -->
+				<ul>
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="productos.html">Products</a> </li>
+					<li> <a href="contacto.html">Contact</a> </li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Contacto -->
+	<main id="mainContacto">
+
+		<form>
+			<!-- campos input text iniciales -->
+			<label for="nombreApellido">Full Name:</label>
+			<input type="text" id="nombreApellido" class="input-iniciales" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" class="input-iniciales" required placeholder="ejemplo@gmail.com">
+
+			<label for="telCelular">Phone Number :</label>
+			<input type="tel" id="telCelular" class="input-iniciales" required placeholder="(XXX)XXX-XXXX">
+
+			<label for="mensaje">Message:</label>
+			<textarea rows="10" id="mensaje" class="input-iniciales" required></textarea>
+
+			<div id="cajaCentrada">
+
+				<!-- botones de seleccion unico tipo de contacto-->
+				<fieldset id="divContacto">
+					<legend>How would you like us to contact you??</legend>
+
+					<label><input type="radio" name="contacto" value="email" id="radio-email">-Email</label>
+
+
+					<label><input type="radio" name="contacto" value="telefono" id="radio-telefono">-Tel Celular</label>
+
+
+					<label><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>-WhatsApp</label>
+				</fieldset>
+
+				<!-- Selector desplegable de horario -->
+				<fieldset id="fieldsetHorario">
+					<legend>In which schedule do you prefer to be attended??</legend>
+
+					<div id="cajaHorario">
+
+						<table>
+							<thead>
+								<tr>
+									<th>Day</th>
+									<th>Open Hours</th>
+
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Monday-Friday</td>
+									<td>8am - 8pm</td>
+
+								</tr>
+								<tr>
+									<td>Saturday</td>
+									<td>10am - 6pm</td>
+
+								</tr>
+								<tr>
+									<td>Holidays</td>
+									<td>No Service</td>
+
+								</tr>
+							</tbody>
+						</table>
+
+						<select>
+							<option>Morning 8am-11am</option>
+							<option>Afternoon 11am-4pm</option>
+							<option>Evening 4pm-8pm</option>
+						</select>
+					</div>
+				</fieldset>
+
+				<!-- campo checkbox novedades -->
+				<label id="checkNovedades"><input type="checkbox" checked>Would you like to receive updates from Barberia Alura?
+					(optional)</label>
+
+			</div>
+
+			<!-- boton submit -->
+			<input id="botonEnviar" type="submit" value="Request Contact.">
+
+		</form>
+
+
+	</main>
+
+	<!-- Footer de la pagina  -->
+	<footer>
+
+		<img id="imgFooter" src="./Recursos/logo-blanco.png">
+		<p>©</p>
+		<a href="https://jfmadrid.com">Developed by JFM - 2023</a>
+
+	</footer>
+
+</body>
+
+</html>

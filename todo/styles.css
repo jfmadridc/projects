@@ -1,0 +1,178 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Dosis", sans-serif;
+}
+
+body {
+	background-image: linear-gradient(
+		90deg,
+		rgba(62, 161, 219, 1) 0%,
+		rgba(93, 52, 236, 1) 120%
+	);
+}
+main {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.mainCard {
+	border-radius: 25px;
+	background-color: #fff;
+	padding: 25px;
+	margin: 10vh 0 5vh;
+	width: 90%;
+	box-sizing: border-box;
+}
+
+form {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.title {
+	font-family: "Dosis", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 15px;
+}
+
+.title h1 {
+	font-size: 30px;
+}
+
+.inputForm {
+	border: none;
+	padding: 10px;
+	border: 1px solid #eee;
+	outline: none;
+	flex: 1;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.inputForm::placeholder {
+	padding: 0px;
+}
+
+.btnCreate {
+	padding: 10px 15px;
+	background-image: linear-gradient(
+		109.6deg,
+		rgba(62, 161, 219, 1) 11.2%,
+		rgba(93, 52, 236, 1) 100.2%
+	);
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.cardsList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	overflow-y: scroll;
+}
+
+.card {
+	padding: 15px;
+	box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	margin: 10px 10px;
+	position: relative;
+	width: 90%;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.task {
+	padding: 10px;
+	text-align: right;
+	font-size: 16px;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+.icon:hover {
+	color: rgba(62, 161, 219, 1);
+}
+
+.completeIcon {
+	color: rgba(62, 161, 219, 1);
+}
+
+.trashIcon:hover {
+	color: #f00;
+}
+
+/* will apply to mobile and ipad */
+@media screen and (min-width: 768px) {
+	.mainCard {
+		width: 70%;
+	}
+	.title h1 {
+		font-size: 40px;
+	}
+	.inputForm {
+		font-size: 20px;
+	}
+	.task {
+		font-size: 20px;
+	}
+	.btnCreate {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		background-image: linear-gradient(
+			90deg,
+			rgba(62, 161, 219, 1) -10%,
+			rgba(93, 52, 236, 1) 140%
+		);
+	}
+	.mainCard {
+		width: 50%;
+	}
+	.title h1 {
+		font-size: 50px;
+	}
+	.inputForm {
+		font-size: 24px;
+	}
+	.task {
+		font-size: 24px;
+	}
+	.btnCreate {
+		font-size: 24px;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	.mainCard {
+		width: 40%;
+	}
+	.title h1 {
+		font-size: 60px;
+	}
+	.inputForm {
+		font-size: 28px;
+	}
+	.task {
+		font-size: 28px;
+	}
+}

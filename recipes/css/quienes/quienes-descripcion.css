@@ -1,0 +1,14 @@
+.quienes__descripcion{
+    color: #595959;
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: Roboto;
+}
+
+@media screen and (min-width:768px) {
+    .quienes__descripcion{
+        
+        font-size: 1.75rem;
+        
+    }
+}

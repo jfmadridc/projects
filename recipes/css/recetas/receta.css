@@ -1,0 +1,25 @@
+.receta{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0.5rem;
+    width: 370px;
+    max-width: 470px;
+    flex-grow: 1;
+}
+
+@media screen and (min-width:768px) {
+    .receta{
+        margin: 1rem 3rem;
+        width: 370px;
+        max-width: 570px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .receta{
+        margin: 1rem 1rem;
+        width: 320px;
+        max-width: 400px;
+    }
+}

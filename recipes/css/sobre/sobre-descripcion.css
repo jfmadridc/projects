@@ -1,0 +1,12 @@
+.sobre__descripcion{
+    color: #8C8888;
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: Roboto;
+}
+
+@media screen and (min-width:768px) {
+    .sobre__descripcion{
+        font-size: 1.75rem;
+    }
+}

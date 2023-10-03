@@ -1,0 +1,151 @@
+/* ---estilos del header inicio--- */
+/* container del h1 logo Mini Alura y el nav de los botones de navegacion */
+.headerPrincipal .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* como los botones estan dentro de otra clase para que tambien esten
+  horizontales debemos tambien darle flex a la class que los contiene */
+.headerPrincipal-nav {
+	display: flex;
+}
+/* ---estilos del header fin--- */
+
+/* ---estilos del grid principal inicio--- */
+/* lista unordered con los nombre de curso e iconos */
+.contenidoPrincipal-cursos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* list item de curso y logo */
+.contenidoPrincipal-cursos-link {
+	width: 23%;
+}
+/* ---estilos del grid principal fin--- */
+
+/* ---estilos del video inicio--- */
+/* container con los 2 elementos video y caja */
+.videoSobre .container {
+	display: flex;
+}
+/* class del video */
+.videoSobre-video {
+	flex-grow: 1;
+	flex-shrink: 2;
+}
+/* class de la caja */
+.videoSobre-sobre {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.videoSobre-sobre-list {
+	flex-grow: 1;
+}
+/* ---estilos del video fin--- */
+
+/* ---estilos del mapa del sitio inicio--- */
+/* class que contiene la lista de cursos del mapa del sitio */
+.rodapePrincipal-navMap-list {
+	display: flex;
+	/* le cambia la direccion a los elementos en vez de horizontal que es la por defecto */
+	flex-direction: column;
+	/* con el flex-wrap y tamaño podemos hacer columnas de elementos */
+	flex-wrap: wrap;
+	height: 250px;
+}
+/* ---estilos del mapa del sitio fin--- */
+
+/* ---estilos del footer inicio--- */
+/* container de la lista de logos y el form de contacto */
+.rodapePrincipal-patrocinadores .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* lista con los logos */
+.rodapePrincipal-patrocinadores-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 60%;
+}
+
+/* class de el "entre en contacto" campo de texto y boton */
+.rodapePrincipal-contatoForm {
+	width: 40%;
+	display: flex;
+	justify-content: right;
+}
+
+/* class de solo el campo de texto y boton */
+.rodapePrincipal-contatoForm-fieldset {
+	display: flex;
+}
+/* ---estilos del footer fin--- */
+
+/* --------Estilos RESPONSIVE Para Mobile inicio-------- */
+@media (max-width: 767px) {
+	/* ---estilos del header inicio--- */
+	.headerPrincipal .container {
+		flex-direction: column;
+		align-items: initial;
+		text-align: center;
+	}
+	.headerPrincipal-nav {
+		flex-direction: column;
+	}
+
+	.headerPrincipal-nav-link-app {
+		order: -1;
+	}
+	/* ---estilos del header fin--- */
+
+	/* ---estilos del grid principal inicio--- */
+	.contenidoPrincipal-cursos {
+		flex-direction: column;
+	}
+	.contenidoPrincipal-cursos-link {
+		width: 98%;
+	}
+	/* ---estilos del grid principal fin--- */
+
+	/* ---estilos del video inicio--- */
+	.videoSobre .container {
+		align-items: center;
+		flex-direction: column;
+	}
+	/* ---estilos del video fin--- */
+
+	/* ---estilos del mapa del sitio inicio--- */
+
+	.rodapePrincipal-navMap-list {
+		height: auto;
+		flex-wrap: nowrap;
+	}
+	/* ---estilos del mapa del sitio fin--- */
+
+	/* ---estilos del footer inicio--- */
+	.rodapePrincipal-patrocinadores .container {
+		flex-direction: column;
+	}
+	.rodapePrincipal-patrocinadores-list {
+		align-items: center;
+		width: 100%;
+		margin: 0;
+	}
+	.rodapePrincipal-contatoForm {
+		width: 100%;
+		justify-content: center;
+	}
+	.rodapePrincipal-contatoForm-fieldset {
+		justify-content: center;
+	}
+	/* ---estilos del footer fin--- */
+}
+/* --------Estilos RESPONSIVE Para Mobile Fin-------- */

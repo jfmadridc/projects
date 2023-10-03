@@ -1,0 +1,506 @@
+body {
+	background-color: lightgray;
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+/* Estilos del header */
+header {
+	background: url(../Recursos/bg.jpg);
+}
+
+#cajaHeader {
+	width: 80%;
+	position: relative;
+	margin: 0 auto;
+}
+
+#imgLogo {
+	width: 10%;
+	max-width: 80px;
+}
+
+#tituloSitio {
+	position: absolute;
+	top: 30%;
+	display: inline;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: cursive;
+	color: #ffffff;
+}
+nav {
+	position: absolute;
+	top: 43%;
+	right: 10px;
+}
+
+nav ul li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 100%;
+	text-decoration: none;
+	transition: 150ms;
+	color: #ffffff;
+}
+
+nav a:hover {
+	color: #c78c19;
+	text-decoration: underline;
+	font-size: 20px;
+}
+/* fin header fin */
+
+/* Estilos index.html */
+
+/* # selector de id banner que se lo puse a la <img id="banner" */
+#banner {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+/* . selector de clase para un div con atibuto class class="principal"*/
+.principal {
+	padding: 1% 10% 2%;
+	background: linear-gradient(lightgray, white 40%);
+}
+
+.tituloPrincipal {
+	text-align: center;
+	font-size: 2.3em;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+/*
+.tituloPrincipal:first-letter{
+    color: #c78c19;
+}
+*/
+
+#utensilios {
+	width: 200px;
+	float: left;
+	margin: 3% 1% 1% 0;
+}
+
+/* a los hijos p de main
+main > p{
+    background-color: red;
+} 
+*/
+
+/* a los p hermanos(despues) de img pero solo 1
+img + p{
+    background-color: blue;
+} 
+*/
+
+/* no solo 1 sino todos los p despues de img 
+img ~ p{
+    background-color: yellow;
+}
+*/
+
+/* a todos los p dentro de main exepto p con el id #misionTitulo
+main p:not(#misionTitulo){
+    background-color: aqua;
+}
+ */
+
+.principal p {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*
+.principal > p:first-line{
+    color: #c78c19;
+}
+*/
+
+em {
+	font-weight: bold;
+}
+
+#misionTitulo {
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+#misionTitulo:before {
+	content: "~ ";
+}
+
+#misionTitulo:after {
+	content: " ~";
+}
+
+#mision {
+	margin: 1.2em 0;
+}
+
+strong {
+	color: #c78c19;
+	font-family: cursive;
+	font-weight: 100;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 30px black;
+}
+
+.sectionVideo {
+	width: 100%;
+	height: 600px;
+	box-shadow: inset 0px 0px 80px rgba(0, 0, 0, 50%);
+}
+
+#video {
+	margin: 0 auto;
+	width: 60%;
+	height: 100%;
+}
+
+.diferenciales {
+	background: linear-gradient(white 40%, lightgray);
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+}
+
+.titulo {
+	font-size: 35px;
+	margin: 0 0 0.3em 0;
+	font-weight: bold;
+}
+
+/*
+.titulo:first-letter{
+    color: #c78c19;
+}
+*/
+
+.diferenciales ul {
+	display: inline-block;
+	width: 46%;
+	vertical-align: top;
+	padding: 2%;
+	line-height: 2em;
+}
+
+.items {
+	font-size: 1.5em;
+	font-style: italic;
+	list-style: disc;
+}
+
+/* al primer elemento de ese tipo */
+.items:first-of-type {
+	font-weight: bold;
+	color: #c78c19;
+}
+
+/* al elemento de ese tipo numero 4*/
+.items:nth-of-type(4) {
+	font-weight: bold;
+	color: #c78c19;
+}
+
+#imgDifs {
+	margin-top: 20px;
+	width: 50%;
+	max-width: 700px;
+	transition: 200ms;
+	opacity: 85%;
+	box-shadow: 20px 20px 20px 0px black, -20px -20px 20px 0px black;
+}
+
+#imgDifs:hover {
+	opacity: 100%;
+	box-shadow: 0px 0px 50px 10px black;
+}
+
+/* fin index.html fin */
+
+/* Estilos productos.html */
+#listaProductos {
+	flex: 1;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	background-color: lightgray;
+	box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 60%);
+}
+
+#listaProductos li {
+	background-color: #ffffff;
+	display: inline-block;
+	text-align: center;
+	width: 280px;
+	height: 415px;
+	vertical-align: top;
+	margin: 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 3px dashed #000000;
+	border-radius: 30px;
+	transition: 150ms;
+	opacity: 70%;
+	/*
+    border-color: #000000;
+    border-width: 2px;
+    border-style:dashed;*/
+}
+
+#listaProductos li:hover {
+	border-color: #c78c19;
+	transform: scale(1.1);
+	opacity: 100%;
+}
+
+#listaProductos li:active {
+	border-color: #088c19;
+}
+
+#listaProductos h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#listaProductos li:hover h2 {
+	/* font-size: 33px; */
+	color: #c78c19;
+}
+.mapa {
+	background: url(../Recursos/bg.jpg);
+	padding-top: 10px;
+	color: white;
+}
+
+.mapa p {
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+/* Estilos de elementos de cada li */
+.prodImg {
+	width: 100%;
+}
+.prodDesc {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.prodPrec {
+	margin-top: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+/* fin productos.html fin */
+
+/* Estilos contacto.html */
+#mainContacto {
+	width: 60%;
+	margin: 1% auto;
+}
+
+form label,
+form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-iniciales {
+	display: block;
+	margin: 0 0 20px;
+	width: 100%;
+	padding: 10px 7px;
+	box-sizing: border-box;
+}
+
+#cajaCentrada {
+	text-align: center;
+}
+
+#divContacto {
+	margin: 30px 0;
+}
+
+#fieldsetHorario {
+	margin: 30px 0;
+}
+
+select {
+	padding: 15px;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+#checkNovedades {
+	margin: 30px 0;
+}
+
+#botonEnviar {
+	width: 50%;
+	margin: 0 25%;
+	padding: 15px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #000000;
+	border: none;
+	border-radius: 10px;
+	transition: 150ms;
+}
+
+#botonEnviar:hover {
+	background-color: orange;
+
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+table {
+	margin: auto;
+}
+
+thead {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+td,
+th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+	text-align: center;
+}
+
+/* fin Estilos contacto.html fin*/
+
+/* Estilos del footer */
+footer {
+	text-align: center;
+	background: url(../Recursos/bg.jpg);
+	padding: 10px 0;
+}
+#imgFooter {
+	width: 7%;
+	max-width: 80px;
+}
+footer p {
+	color: white;
+	font-size: 40px;
+	margin: 5px 0;
+}
+
+footer a {
+	color: rgba(255, 255, 255, 60%);
+	font-size: 18px;
+	transition: 150ms;
+}
+
+footer a:hover {
+	font-size: 22px;
+	text-decoration: underline;
+	color: #c78c19;
+	opacity: 85%;
+}
+/* fin footer fin */
+
+/* Propiedades Responsive */
+@media screen and (max-width: 800px) {
+	#imgLogo {
+		width: 15%;
+		margin-left: 2%;
+	}
+
+	nav {
+		position: absolute;
+		top: 43%;
+		right: 10px;
+	}
+
+	#cajaHeader,
+	.principal,
+	#video {
+		width: auto;
+	}
+
+	#tituloSitio {
+		display: none;
+	}
+	.tituloPrincipal {
+		font-size: 1.5rem;
+	}
+
+	.titulo {
+		text-align: center;
+	}
+
+	.diferenciales {
+		padding: 8%;
+	}
+	#misionTitulo {
+		font-size: 1.5em;
+	}
+	.principal {
+		text-align: center;
+		padding: 1% 2% 2%;
+	}
+
+	.principal p {
+		font-size: 1em;
+	}
+
+	#utensilios {
+		width: 0%;
+	}
+
+	.sectionVideo {
+		width: 100%;
+		height: 250px;
+	}
+
+	.diferenciales ul {
+		width: 100%;
+	}
+	#imgDifs {
+		margin: 40px 0px 30px;
+		width: 100%;
+	}
+	#imgDifs:hover {
+		width: 100%;
+		opacity: 100%;
+		box-shadow: 0px 0px 50px 10px black;
+	}
+
+	#mainContacto {
+		width: 90%;
+		margin: 3% auto;
+	}
+
+	#listaProductos li {
+		margin: 5%;
+	}
+
+	#imgFooter {
+		width: 15%;
+	}
+}

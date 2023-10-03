@@ -1,0 +1,16 @@
+.menu__link {
+    color: #909090;
+    margin: 0 0.7rem;
+    text-decoration: none; 
+    font-family: Roboto;
+    font-weight: 200;
+    
+}
+.menu__link.activo{
+    color: #151515;
+    font-weight: 300;
+}
+
+.menu__link:hover{
+    text-decoration: underline;
+}

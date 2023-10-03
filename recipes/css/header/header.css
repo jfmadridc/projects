@@ -1,0 +1,26 @@
+.header {
+    align-items: center;
+    background: linear-gradient(to right, #f0f0f0, #d7d7d7);
+    display: flex;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.logo{
+    display: none;
+}
+
+
+@media screen and (min-width:768px) {
+    .header{
+        justify-content: space-between;
+        font-size: 1.75rem;
+        padding: 0 2rem;
+    }
+
+    .logo{
+        display: block;
+    }
+}
