@@ -36,6 +36,12 @@ h1 {
 	font-weight: 500;
 	text-decoration: none;
 	font-size: 18px;
+	transition: 150ms;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	border: solid 2px #062d52;
 }
 
 /* will apply to mobile and ipad */
